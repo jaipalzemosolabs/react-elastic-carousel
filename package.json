@@ -24,10 +24,10 @@
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "prebuild": "npm run lint:fix",
-    "build": "rollup -c",
+    "builds": "rollup -c",
     "build-doc": "docz build",
     "deploy-doc": "gh-pages -d demo",
-    "install": "npm run build"
+    "install": "npm run builds"
   },
   "lint-staged": {
     "*.js": "eslint src/. --fix"
