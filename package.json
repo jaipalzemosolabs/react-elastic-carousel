@@ -26,7 +26,8 @@
     "prebuild": "yarn run lint:fix",
     "build": "rollup -c",
     "build-doc": "docz build",
-    "deploy-doc": "gh-pages -d demo"
+    "deploy-doc": "gh-pages -d demo",
+    "install": "npm run build"
   },
   "lint-staged": {
     "*.js": "eslint src/. --fix"
